@@ -1,0 +1,118 @@
+#pushkin_title {
+    background: url(../images/pushkin/photo.png) white no-repeat;
+    background-size: cover ;
+    height: 364px;
+    padding-top: 80px;
+}
+
+#pushkin_card {
+    color: black;
+    margin: 20px;
+    background-color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    width: fit-content;
+    padding: 48px 36px;
+}
+
+#pushkin_card > h1 {
+    font-size: 36px;
+    font-weight: normal;
+}
+
+#pushkin_card > h1 {
+    margin: 0;
+}
+
+#pushkin_card_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding-top: 54px;
+}
+
+#pushkin_card_footer {
+    font-size: 14px;
+    color: #626262;
+}
+
+#pushkin_card_time {
+    background-color: #262626;
+    color: white;
+    background-size: 2px;
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+
+.tab {
+    
+    color: #626262;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    font-size: 16px;
+}
+
+.tab button {
+    color: #626262;
+    padding: 32px 40px 20px 0px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.tab button:hover {
+    color: green;
+}
+
+.tab button.active {
+    color: green;
+}
+
+
+#dishes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16px;
+    margin-bottom: 80px;
+}
+
+.dishes_card {
+    border: 1px solid #D8D8D8;
+    border-radius: 2px;
+    display: flex;
+    height: 170px;
+}
+
+.dishes_card_desc {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.dish_title_sub {
+    font-size: 13px;
+    color: #626262;
+    padding-top: 4px;
+}
+
+
+.dish_price {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.dishes_img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.dishes_card:hover {
+    cursor: pointer;
+    background-color: #ebebeb;
+}

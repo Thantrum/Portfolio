@@ -1,0 +1,303 @@
+body {
+    margin: 0 auto;
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.container {
+    padding: 0 8px;
+    margin: auto;
+    max-width: 962px;
+}
+
+/* DOne */
+
+/* header */
+header {
+    box-shadow: 0px 0px 16px #b4b4b4c2;
+    z-index: 100;
+    max-width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+}
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
+    padding-left: 0px;
+}
+
+.header_cabinet {
+    display: flex;
+}
+
+/* Button Enter */
+
+.btn_enter {
+    background-color: white;
+    border: 1px solid #E0E0E0;
+    border-radius: 10%;
+    padding: 14px 20px;
+    font-size: 13px;
+    font-weight: 600;
+    margin: auto 12PX;
+}
+
+.btn_enter:hover {
+    background-color: lightgray;
+  }
+
+.btn_enter:active {
+    background-color: #57AD56;
+}
+
+/* DOne */
+
+/* Search form */
+
+.search {
+    margin-top: 56px;
+    margin-bottom: 56px;
+}
+
+.search-input {
+    outline: none;
+    border: none;
+    width: 100%;
+    border-bottom: 1px solid #757575;
+}
+
+/* DOne */ 
+
+/* Restaraunts section */
+
+.rest_heading {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.rest_cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 16px;
+}
+
+.rest_card {
+    margin-bottom: 16px;
+}
+
+.card_header {
+    margin-top: 16px;
+    margin-bottom: 4px;
+}
+
+.card_image {
+    width: 100%;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.card_image:hover {
+    transform: scale(1.2);
+}
+
+.card_food {
+    margin-bottom: 4px;
+}
+
+.card_time {
+    margin-bottom: 4px;
+}
+
+/* DOne */ 
+
+/* Footer */
+
+.footer {
+    background-color: #262626;
+}
+
+.footer-link {
+    padding: 8px 0;
+}
+
+.white_logo {
+    padding-top: 56px;
+    margin-bottom: 30px;
+}
+
+.footer_hr {
+    border-color: rgba(255, 255, 255, 40%);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+/* Uber links */
+
+.uber-links {
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 32px;
+}
+
+.footer-links-column {
+    flex-basis: 33.333333%;
+    display: flex;
+    flex-flow: column nowrap;
+    font-size: 13px;
+    color: #fff;
+}
+
+.about-partner-item {
+    margin-bottom: 23px;
+}
+
+/* Lang selector */
+
+
+.lang-selector {
+    background-color: #3B3B3B;
+    width: 227px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.lang-selector-img {
+    width: 16px;
+    height: 16px;
+    margin: 12px 16px;
+}
+
+.lang-selector-select {
+    background: transparent;
+    color: white;
+    border: 0;
+    width: 170px;
+    font-family: "Robot", sans-serif;
+    appearance: none;
+    background-image: url(/Ubereat/images/select_arrow.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.lang-selector-select:hover {
+    background;
+}
+
+option {
+    background: transparent;
+    color: #000;
+    font-size: 13px;
+  }
+
+/* Social media */
+
+.social-media-heading {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.social-media-icons {
+    display: flex;
+    gap: 10px;
+    padding-top: 6px;
+    padding-bottom: 13px;
+}
+
+
+.social-media-heading span {
+    color: green;
+}
+
+
+.about-partner-link {
+    font-size: 13px;
+}
+
+
+/* Dowload links */
+
+.download-links {
+    text-align: center;
+}
+.download-link {
+    margin: 41px 20px;
+}
+
+.copyright {
+    font-size: 11px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 760px;
+    color: #fff;
+}
+
+.copyright div {
+    margin: 40px 0;
+}
+
+/* Button Up */
+
+.btn-up {
+    position: fixed;
+    background-color: #673ab7;
+    right: 20px;
+    bottom: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease-in-out;
+    width: 80px;
+    height: 80px;
+    opacity: 1;
+}
+
+.btn-up::before {
+    content: "";
+    width: 80px;
+    height: 80px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+    background-image: (url(/Ubereat/images/btn-up.png));
+}
+
+.btn-up-hide {
+    display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    .rest_cards {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+@media screen and (max-width: 576px) {
+    .rest_cards {
+      grid-template-columns: 1fr;
+    }
+
+    .uber-links {
+        flex-flow: column;
+    }
+
+    .footer-links-column {
+        flex-basis: 100%;
+      }
+  }

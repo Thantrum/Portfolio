@@ -1,0 +1,169 @@
+/* Footer */
+.footer {
+    background-color: #262626;
+}
+
+.footer-link {
+    padding: 8px 0;
+}
+
+.white_logo {
+    padding-top: 56px;
+    margin-bottom: 30px;
+}
+
+.footer_hr {
+    border-color: rgba(255, 255, 255, 40%);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+/* Uber links */
+
+.uber-links {
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 32px;
+}
+
+.footer-links-column {
+    flex-basis: 33.333333%;
+    display: flex;
+    flex-flow: column nowrap;
+    font-size: 13px;
+    color: #fff;
+}
+
+.footer-link:hover {
+    color: gray;
+}
+
+.about-partner-item {
+    margin-bottom: 23px;
+}
+
+/* Lang selector */
+
+
+#lang-selector {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    width: fit-content;
+    margin-left: -16px;
+}
+
+#lang-selector-img {
+    max-width: 100%;
+    display: block;
+    position: relative;
+    left: 30px;
+}
+
+#lang-selector-select {
+    color: white;
+    border: 0;
+    width: 12rem;
+    font-family: "Roboto", sans-serif;
+    appearance: none;
+    background-image: url(../images/select_arrow.png);
+    background-repeat: no-repeat;
+    background-position: 93%;
+    background-color: #3B3B3B;
+    padding: 10px 70px 10px 50px;
+}
+
+#lang-selector-select:focus-visible {
+    border: none;
+}
+
+/* Social media */
+
+.social-media-heading {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.social-media-icons {
+    display: flex;
+    gap: 10px;
+    padding-top: 6px;
+    padding-bottom: 13px;
+}
+
+
+.social-media-heading span {
+    color: green;
+}
+
+
+.about-partner-link {
+    font-size: 13px;
+}
+
+
+/* Download links */
+
+.download-links {
+    text-align: center;
+}
+.download-link {
+    margin: 41px 20px;
+}
+
+.copyright {
+    font-size: 11px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 760px;
+    color: #fff;
+    padding: 20px 0;
+}
+
+
+/* Button Up */
+
+.btn-up {
+    position: fixed;
+    background: #673ab7 url(../images/btn-up.png);
+    right: 20px;
+    bottom: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease-in-out;
+    width: 80px;
+    height: 80px;
+    opacity: 1;
+}
+
+.btn-up::before {
+    content: "";
+    width: 80px;
+    height: 80px;
+}
+
+.btn-up-hide {
+    display: none;
+}
+
+
+@media screen and (max-width: 576px) {
+    .uber-links {
+        flex-flow: column;
+    }
+
+    .footer-links-column {
+        flex-basis: 100%;
+      }
+
+    .copyright {
+        flex-flow: column nowrap;
+    }
+}

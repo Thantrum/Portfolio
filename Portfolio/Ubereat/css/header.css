@@ -1,0 +1,36 @@
+header {
+    box-shadow: 0px 0px 16px #b4b4b4c2;
+    z-index: 100;
+    max-width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+}
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
+}
+
+.header_cabinet {
+    display: flex;
+}
+
+.btn_enter {
+    background-color: white;
+    border: 1px solid #E0E0E0;
+    border-radius: 10%;
+    padding: 14px 20px;
+    font-size: 13px;
+    font-weight: 600;
+    margin: auto 12PX;
+}
+
+.btn_enter:hover {
+    background-color: lightgray;
+  }
+
+.btn_enter:active {
+    background-color: #57AD56;
+}

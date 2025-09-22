@@ -1,0 +1,16 @@
+.rounded-img {
+  height: auto;
+  max-width: 70%;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 0.6em;
+  margin-bottom: 1em;
+}
+
+.btn {
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 500px) {
+  
+}

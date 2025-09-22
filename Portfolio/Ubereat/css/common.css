@@ -1,0 +1,22 @@
+body {
+    margin: 0 auto;
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    padding: 0 8px;
+    margin: auto;
+    max-width: 956px;
+}
+
+a:visited {
+    color: white;
+}
+
+a:link {
+    color: white;
+}

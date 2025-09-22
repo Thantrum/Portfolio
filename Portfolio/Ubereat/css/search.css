@@ -1,0 +1,17 @@
+.search {
+    margin-top: 56px;
+    margin-bottom: 56px;
+}
+
+.search-input {
+    outline: none;
+    border: none;
+    width: 100%;
+    border-bottom: 1px solid #757575;
+    
+}
+
+.search-input:focus::placeholder {
+    transition: 0.5s;
+    color: transparent;
+}

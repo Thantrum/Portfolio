@@ -1,0 +1,55 @@
+.rest_heading {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.rest_cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 16px;
+}
+
+.rest_card {
+    margin-bottom: 16px;
+}
+
+.card_header {
+    margin-top: 16px;
+    margin-bottom: 4px;
+}
+
+.card_image {
+    width: 100%;
+    overflow: hidden;
+}
+
+.card_image img {
+    transition: 0.3s;
+    width: 100%;
+}
+
+.card_image img:hover {
+    transform: scale(1.2);
+}
+
+.card_food {
+    margin-bottom: 4px;
+}
+
+.card_time {
+    margin-bottom: 4px;
+}
+
+@media screen and (max-width: 768px) {
+    .rest_cards {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+
+@media screen and (max-width: 576px) {
+    .rest_cards {
+      grid-template-columns: 1fr;
+    }
+}
